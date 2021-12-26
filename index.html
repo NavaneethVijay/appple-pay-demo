@@ -49,7 +49,6 @@
         console.log(session);
 
         session.onvalidatemerchant = async (event) => {
-          console.log(event);
           // Call your own server to request a new merchant session.
           const merchantSession = await validateMerchant();
           session.completeMerchantValidation(merchantSession);
